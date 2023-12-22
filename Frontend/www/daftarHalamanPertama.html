@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Pendaftaran Tenaga Kesehatan Page 1</title>
+</head>
+<body>
+    <div class="m-8 max-w-sm mx-7 p-3  bg-white rounded-xl shadow-lg flex items-center space-x-4 mb-12">
+        <div class="shrink-0">
+          <img class="h-12 w-12" src="https://s3-alpha-sig.figma.com/img/076e/f737/e259b7342d9589dcdd12c30af014e74e?Expires=1703462400&Signature=RUkX9LqSXfLoar8VcGPGfDddNz58vHInqQCrFxelJHaK0~HRLiRnpgPcprfk8SI~EswVzI~N1P2uDqu-nD6HhRIExESilOl65BKtBF~c5WVsPJnwqxgXaFCZF8bgvGTOVbWMZBAumc0UqCbkiVSXy5CNIATGQTBiuIJqzBqK20y-dUzqXFZBbFGf4ef25fL~dApwID5gXZbDwchFZJwSCR9jtjdJGvYKVkrASmpLLGX-InUzkgl7DceU8cTURSYtSSpNtMSnvxFJdPAKSPEBMg8Rxdgvh3KoIWV0pJPxsbfowIV2ZvdeCAaU7rqj9s33SP~v3YVpquKf9Sp~6IVvNQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="ChitChat Logo">
+        </div>
+        <div>
+          <div class="text-xl font-medium text-black">Daftar</div>
+          <p class="text-slate-500">Daftar Sebagai Tenaga Kesehatan</p>
+        </div>
+      </div>
+
+<!-- MASUKKAN NAMA -->
+    <div class ="max-w-lg m-4 border border-teal-500 p-3 shadow-md mx-6 rounded-3xl flex space-x-4 justify-center items-center mt-14"> 
+
+        <!-- GAMBAR -->
+        <span><img src="/img/Frame 62.svg" alt=""></span>
+
+        <!-- FORM -->
+        <span class="w-full  focus:ring-1 focus:ring-teal-400 focus:outline-none rounded-lg">
+            <form action="" class="w-full">
+            <input type="text" name="" id="" placeholder="Masukkan Nama" class="w-full focus:ring-1 focus:ring-teal-400 focus:outline-none rounded-lg invalid:text-pink-500 invalid:border-pink-700 invalid:focus:ring-pink-700 py-1">
+        </form>
+    </span>
+        
+    </div>
+
+<!-- TANGGAL LAHIR -->
+    <div class ="max-w-lg mx-5 justify-center m-3 p-2 flex space-x-4">
+        <!-- GAMBAR -->
+        <span >
+            <img src="/img/Subtract.svg" alt="">
+    
+        </span>
+
+        <!-- TULISAN -->
+        <span class="font-semibold">
+            Tanggal Lahir
+        </span>
+        <br>
+        <!-- MILIH TANGGAL -->
+        <input type="date" name="" id="">
+
+    </div>
+
+<!-- JENIS KELAMIN -->
+    <div class ="max-w-lg border border-teal-500 shadow-md mx-6 rounded-3xl space-x-4"> 
+        <div class="flex space-x-4 p-5 items-center ">
+                <!-- GAMBAR -->
+            <span><img src="https://s3-alpha-sig.figma.com/img/e536/4855/28bd80b0be69c4b7d2569680c0d75619?Expires=1703462400&Signature=bBkdmrmWu2xPtZxRgWbXWQhnWSFGLcCbmWE78M-2VrdkjTUvKn5BJOpdw1avNyKFUpQpGqRihehvAc6~FXFrWpuK-U5zSNA9nZ4fZthJfPmrvUP9NAnq4WUEonlHJ0rUk1dwWRV4sctmiAur2DZuqgqr7ADjYo8ocfpumVOK0mzQvebaipaPkqhaSD4IbTVxlRwgq9ITLeRGx-TMHhsvZDaDgDLK8plAUqSBc6z1HQYvsn9yROa4svNn5LoiltaoFwQLEYc4vQ46Xmi6-EuhTc9yTPWewAUQa~dyjtZznZQCLy9vLuiRAmmSnbsb6d9K8-uXsRtIc912AckItmE9Xg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4 " class="w-6" ></span>
+
+            <!-- FORM -->
+            <span class="">
+            <form action="">
+                <input type="radio" name="gender"  id="gender1" value="Laki-laki"> <label for="gender1" class="font-semibold text-teal-700">Laki-laki</label>
+                <br>
+                <input type="radio" name="gender" id="gender2" value="Perempuan" > <label for="gender2" class="font-semibold text-teal-700 ">Perempuan</label>
+            </form>
+        </span>
+
+
+        </div>
+
+        
+        
+    </div >
+
+<!-- NOMOR TELEPON   -->
+    <div class ="max-w-lg m-5 border border-teal-500 p-5 shadow-md mx-6 rounded-3xl space-x-6 items-center">
+        <div class =" flex space-x-4 items-center"> 
+
+            <!-- GAMBAR -->
+            <span><img src="img/telepon.svg" class="w-6" ></span>
+
+            <!-- FORM -->
+            <span class="w-full focus:ring-1 focus:ring-teal-700 focus:outline-none rounded-lg ">
+                <form action="">
+                <input type="tel" name="" id="" placeholder="Masukkan Nomor Telepon" pattern="(62)[0-9]{5,20}" class="w-full focus:ring-1 focus:ring-teal-700 p-1 focus:outline-none rounded-lg invalid:ring-pink-700 invalid:text-pink-700 peer">
+
+                <p class=" text-sm font-semibold text-pink-700 invisible peer-invalid:visible">*Masukan tidak valid</p>
+            </form>
+        </span>
+
+        </div>
+
+        <div>
+            <p class="mt-2 ml-4 font-semibold text-teal-600">*Tulis dengan format: 628xxxxxx</p>
+        </div>
+        
+    </div>
+
+        
+
+
+
+    </div>
+   
+<!-- EMAIL -->
+    <div class ="max-w-lg m-5 border border-teal-500 p-5 shadow-md mx-6 rounded-3xl space-x-4">
+        <div class =" flex space-x-4 items-center"> 
+
+            <!-- GAMBAR -->
+            <span><img src="/img/email.svg" class="w-7" ></span>
+    
+            <!-- FORM -->
+            <span class="w-full focus:ring-1 focus:ring-teal-700 focus:outline-none rounded-lg peer invalid:ring-pink-700 invalid:text-pink-700">
+                <form action="">
+                <input type="email" name="" id="" placeholder="Masukkan Email" class="w-full focus:ring-1 focus:ring-teal-700 focus:outline-none rounded-lg invalid:ring-pink-700 invalid:text-pink-700 peer">
+                <p class=" text-sm font-semibold text-pink-700 invisible peer-invalid:visible">*Masukan tidak valid</p>
+            </form>
+        </span>
+        
+        
+
+            
+        </div>
+        
+
+    </div>
+
+   
+
+<!-- TOMBOL SUBMIT -->
+
+<button class="max-w-lg m-2 px-8 border border-teal-500 p-3 shadow-md mx-auto rounded-2xl flex space-x-4 font-bold text-teal-600  mt-12" type="submit" value="simpan" >
+    SUBMIT
+</button>
+
+
+<!-- TOMBOL NEXT -->
+
+<button class="max-w-lg m-2 px-10 border border-teal-500 p-3 shadow-md mx-auto rounded-2xl flex space-x-4 font-bold bg-teal-400 text-white mt-6" type="button" onclick="location.href='daftarHalamanKedua.html'">
+    NEXT
+</button>
+
+</body>
+</html>
