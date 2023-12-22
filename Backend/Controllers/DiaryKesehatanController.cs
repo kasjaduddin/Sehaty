@@ -21,13 +21,6 @@ namespace Sehaty.Controllers
             _context = context;
         }
 
-        // GET: api/DiaryKesehatan
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<DiaryKesehatan>>> GetAllDiaryKesehatan()
-        {
-            return await _context.DiaryKesehatans.ToListAsync();
-        }
-
         // GET: api/DiaryKesehatan/5
         [HttpGet("{id}")]
         public async Task<ActionResult<DiaryKesehatan>> GetDiaryKesehatan(int id)

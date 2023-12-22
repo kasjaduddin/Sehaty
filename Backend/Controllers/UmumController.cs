@@ -21,13 +21,6 @@ namespace Sehaty.Controllers
             _context = context;
         }
 
-        // GET: api/Umum
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Umum>>> GetAllUmum()
-        {
-            return await _context.Umums.ToListAsync();
-        }
-
         // GET: api/Umum/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Umum>> GetUmum(int id)
