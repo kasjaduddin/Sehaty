@@ -21,13 +21,6 @@ namespace Sehaty.Controllers
             _context = context;
         }
 
-        // GET: api/TenagaKesehatan
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<TenagaKesehatan>>> GetAllTenagaKesehatan()
-        {
-            return await _context.TenagaKesehatans.ToListAsync();
-        }
-
         // GET: api/TenagaKesehatan/5
         [HttpGet("{id}")]
         public async Task<ActionResult<TenagaKesehatan>> GetTenagaKesehatan(int id)
