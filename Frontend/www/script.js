@@ -2,6 +2,7 @@ const saveButton = document.querySelector('#save');
 const saveButtonUmum = document.querySelector('#saveu');
 const saveButtonTenagaKesehatan1 = document.querySelector('#savetk1');
 const saveButtonTenagaKesehatan2 = document.querySelector('#savetk2');
+
 const inputBeratBadan = document.querySelector('#BeratBadan');
 const inputTinggi = document.querySelector('#Tinggi');
 const inputGulaDarah = document.querySelector('#GulaDarah');
@@ -130,3 +131,49 @@ saveButtonTenagaKesehatan1.addEventListener('click', function() {
 saveButtonTenagaKesehatan2.addEventListener('click', function() {
     addDiary(inputNomorSTR, inputSpesialis, inputTempatPraktik)
 })
+
+function displayTKIdInForm(TenagaKesehatan) {
+    inputNamaTenagaKesehatan.value = TenagaKesehatan.Nama;
+    inputTanggalLahirTenagaKesehatan.value = TenagaKesehatan.TanggalLahir;
+    inputJenisKelaminTenagaKesehatan.value = TenagaKesehatan.JenisKelamin;
+    inputTeleponTenagaKesehatan.value = TenagaKesehatan.Telepon;
+    inputEmailTenagaKesehatan.value = TenagaKesehatan.Email;
+    inputNomorSTR.value = TenagaKesehatan.NomorSTR;
+    inputSpesialis.value = TenagaKesehatan.Spesialis;
+    inputTempatPraktik.value = TenagaKesehatan.TempatPraktik;
+}
+
+function displayUIdInForm(Umum) {
+    inputNamaUmum.value = Umum.Nama;
+    inputTanggalLahirUmum.value = Umum.TanggalLahir;
+    inputJenisKelaminUmum.value = Umum.JenisKelamin;
+    inputTeleponUmum.value = Umum.Telepon;
+    inputEmailUmum.value = Umum.Umum;
+}
+
+function displayDIdInForm(DiaryKesehatan){
+    inputBeratBadan.value = DiaryKesehatan.BeratBadan;
+    inputTinggi.value = DiaryKesehatan.Tinggi;
+    inputGulaDarah.value = DiaryKesehatan.GulaDarah;
+    inputSystolic.value = DiaryKesehatan.Systolic;
+    inputDiastolic.value = DiaryKesehatan.Diastolic;
+    inputKolesterol.value = DiaryKesehatan.Kolesterol;
+}
+
+function getTenagaKesehatanById(id){
+    fetch('http://localhost:5168/api/TenagaKesehatan/${id}')
+    .then(data=>data.json())
+    .then(response=> displayTKIdInForm (response))
+}
+
+function getUmumById() {
+    fetch('http://localhost:5168/api/Umum/${id}')
+    .then(data => data.json)
+    .then(response => displayUIdInForm(response))
+}
+
+function getDiaryById() {
+    fetch('http://localhost:5168/api/Diary/${id}')
+    .then(data => data.json)
+    .then(response => displayDIdInForm(response));
+}
